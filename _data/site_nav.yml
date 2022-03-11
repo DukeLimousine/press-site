@@ -1,0 +1,13 @@
+links:
+- text: Home
+  url: "/"
+  class: site-nav__home
+  id: home
+- text: Projects
+  url: "/"
+  class: site-nav__projects
+  id: projects
+- text: Hag Name Generator
+  url: "/"
+  class: site-nav__generator
+  id: generator
