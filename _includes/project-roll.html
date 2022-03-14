@@ -1,0 +1,12 @@
+<ul>
+  {% for project in site.data.projects.projects %}
+  	<li>
+  	  <a href="{{project.url}}">
+  	  	<div>{{ project.title }}</div>
+  	  	<div>
+  	  	  <img src="/assets/img/{{ project.img }}"/>
+  	  	</div>
+  	  </a>
+  	</li>
+  {% endfor %}
+</ul>

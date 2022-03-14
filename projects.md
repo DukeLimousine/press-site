@@ -3,4 +3,6 @@ layout: home
 permalink: projects
 ---
 
-<h1>Projects</h1>
+<p>{{ site.data.projects.copy }} {{ site.data.company-info.name }}</p>
+
+{% include project-roll.html %}
