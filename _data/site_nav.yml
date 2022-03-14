@@ -4,10 +4,10 @@ links:
   class: site-nav__home
   id: home
 - text: Projects
-  url: "/"
+  url: "/projects"
   class: site-nav__projects
   id: projects
 - text: Hag Name Generator
-  url: "/"
+  url: "/generator"
   class: site-nav__generator
   id: generator
