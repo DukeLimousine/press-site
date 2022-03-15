@@ -10,4 +10,5 @@ permalink: /generator
   <button>Generate</button>
 </form>
 
+{% include generator_data.html %}
 <script src="/assets/js/generator.js" type="text/javascript"></script> 

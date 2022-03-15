@@ -1,5 +1,4 @@
----
----
+var site = site || {};
 
 document.addEventListener("DOMContentLoaded", function() {
   let generatorForm = document.getElementById('generator-form');
@@ -8,18 +7,26 @@ document.addEventListener("DOMContentLoaded", function() {
   let lastNames = [];
 
   function processData(arr, val) {
-    arr.push(val.split('=>')[1].split(',')[0].replace(/"/g,""));
+    arr.push(val.split('=>')[1].split(',')[0].replace(/"|}/g,""));
   }
 
-  {% for value in site.data.titles %}
-    processData(titles, '{{value}}' );
-  {% endfor %}
-  {% for value in site.data.first_names %}
-    processData(firstNames, '{{value}}' );
-  {% endfor %}
-  {% for value in site.data.last_names %}
-    processData(lastNames, '{{value}}' );
-  {% endfor %}
+  if (site.titles) {
+    for (const key in site.titles ) {
+      processData(titles, site.titles[key]);
+    };
+  }
+
+  if (site.firstNames) {
+    for (const key in site.firstNames ) {
+      processData(firstNames, site.firstNames[key]);
+    };
+  }
+
+  if (site.lastNames) {
+    for (const key in site.lastNames ) {
+      processData(lastNames, site.lastNames[key]);
+    };
+  }
 
   generatorForm.addEventListener('submit', function(e) {
     e.preventDefault();

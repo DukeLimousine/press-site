@@ -1,0 +1,24 @@
+<script>
+  var site = site || {};
+  site.titles = {};
+  site.firstNames = {};
+  site.lastNames = {};
+
+  {% assign i = 0 %}
+  {%- for title in site.data.titles -%}
+    site.titles["{{i}}"] = '{{ title }}';
+    {% assign i = i | plus: 1 %}
+  {%- endfor -%}
+
+  {% assign j = 0 %}
+  {%- for name in site.data.first_names -%}
+    site.firstNames["{{j}}"] = '{{ name }}';
+    {% assign j = j | plus: 1 %}
+  {%- endfor -%}
+
+  {% assign k = 0 %}
+  {%- for name in site.data.last_names -%}
+    site.lastNames["{{k}}"] = '{{ name }}';
+    {% assign k = k | plus: 1 %}
+  {%- endfor -%}
+</script>
