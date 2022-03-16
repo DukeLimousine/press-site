@@ -8,3 +8,25 @@ $medium-large: 1000px !default;
 $large: 1200px !default;
 $large-xlarge: 1400px !default;
 $xlarge: 1600px !default;
+
+$min-width: 320px;
+$max-width: 1600px;
+
+// Fonts
+// ________
+$font-grenze: 'Grenze Gotisch', cursive;
+$font-noto: 'Noto Serif', serif;
+
+$font-cursive: $font-grenze;
+$font-serif: $font-noto;
+
+// Colors
+// ________
+
+$color--white: #ffffff;
+$color--black: #000000;
+$color--green: green;
+
+// Header
+// _______
+$header-height--large: 160px;

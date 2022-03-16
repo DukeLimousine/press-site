@@ -1,0 +1,25 @@
+.site-header {
+  max-width: $max-width;
+  height: $header-height--large;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.site-header__wrapper {
+  display: flex;
+  background-color: $color--black;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+.site-header {
+  .company-name {
+  	color: $color--white;
+  }
+}

@@ -1,5 +1,6 @@
 name: Three Apparitions
 email: test@test.com
+fonts: "Grenze+Gotisch:wght@400;700&family=Noto+Serif:wght@400;700"
 socials:
 - name: Facebook
   url: "https://www.facebook.com/"

@@ -1,0 +1,30 @@
+.body-grid {
+  display: grid;
+  grid-template-columns: auto minmax($min-width, $max-width) auto;
+  grid-template-rows: $header-height--large 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.center-col {
+  grid-column: 2 / span 1;
+}
+
+.site-header {
+  grid-row: 1 / 1;
+}
+
+.site-main {
+  grid-row: 2 / 2;
+}
+
+.site-footer {
+  grid-row: 3 / 3;
+}
+
+.element-padding {
+  padding: 1rem;
+  @include breakpoint($medium) {
+  	padding: 2rem;
+  }
+}

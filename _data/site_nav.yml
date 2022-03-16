@@ -7,7 +7,11 @@ links:
   url: "/projects"
   class: site-nav__projects
   id: projects
-- text: Hag Name Generator
+- text: Hag Generator
   url: "/generator"
   class: site-nav__generator
   id: generator
+- text: About
+  url: "/"
+  class: site-nav__about
+  id: about

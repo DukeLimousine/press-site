@@ -18,3 +18,24 @@
     @media (min-width: $point) { @content ; }
   }
 }
+
+// link override
+@mixin link($color, $hover : false) {
+  color: $color;
+  &:link,
+  &:visited {
+    color: $color;
+  }
+  @if $hover {
+    &:active,
+    &:hover {
+      color: $hover;
+    }
+  }
+  @else {
+    &:active,
+    &:hover {
+      color: $color;
+    }
+  }
+}
