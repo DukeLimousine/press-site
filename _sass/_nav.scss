@@ -17,6 +17,9 @@
   &:hover {
   	transform: skew(6deg,6deg);
   }
+  &:nth-child(even):hover {
+  	transform: skew(-6deg,-6deg);
+  }
 }
 
 .site-nav__link {

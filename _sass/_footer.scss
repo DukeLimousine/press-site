@@ -2,3 +2,37 @@
   width: 42px;
   height: 42px;
 }
+
+.site-footer__wrapper {
+  display: flex;
+  background-color: $color--black;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer__list.site-footer__list--social {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.footer-info-wrapper {
+  color: $color--white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soc-svg__bg--facebook {
+  fill: $color--white;
+}
+
+.site-footer__email {
+  @include link($color--white);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
