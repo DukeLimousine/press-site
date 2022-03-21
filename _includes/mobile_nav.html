@@ -1,0 +1,21 @@
+<nav class="mobile-nav" role="navigation">
+  <div class="mobile-nav__menu--open"><i class="fa fa-bars"></i></div>
+
+  <div id="mobile-nav-overlay" class="mobile-nav__overlay">
+    <a class="mobile-nav__closebtn js-mobile-nav__closebtn">&times;</a>
+    <div class="mobile-nav__overlay-content" role="menu">
+      {% for link in site.data.site_nav.links %}
+      {% if page.url contains link.id %}
+          {% assign selected = true %}
+        {% else %}
+          {% assign selected = false %}
+        {% endif %}
+          <a href="{{ link.url }}"
+             title=""
+             class="mobile-nav__overlay-content-link js-mobile-nav__overlay-content-link js-nav-mobile-link {% if selected %}active{% endif %}"
+             role="menuitem"
+             >{{ link.text }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,87 @@
+.mobile-nav {
+  @include breakpoint($medium) {
+    display: none;
+  }
+}
+
+.mobile-nav__menu--open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa.fa-bars {
+  color: $color--white;
+  font-size: 2.75rem;
+}
+
+.mobile-nav__overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.mobile-nav__overlay-content {
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  text-align: right;
+  margin-top: 3.875rem;
+}
+
+.mobile-nav__overlay {
+  overflow-y: scroll;
+  a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $color--white;
+    display: block;
+    transition: 0.3s;
+    &:focus,
+    &:active,
+    &:visited,
+    &:hover {
+      color: $color--white;
+    }
+  }
+}
+
+.overlay {
+  a {
+    &:focus,
+    &:active,
+    &:visited,
+    &:hover {
+      color: $color--white;
+    }
+  }
+}
+
+.mobile-nav__overlay .mobile-nav__closebtn {
+  position: absolute;
+  top: -0.625rem;
+  right: 0.3125rem;
+  font-size: 3.75rem;
+  margin-right: 2rem;
+}
+
+.mobile-nav__overlay-content-link {
+  margin-right: 2rem;
+  &.active {
+    color: $color--white;
+    text-decoration: underline;
+  }
+  &:visited {
+    &.active {
+      color: $color--white;
+      text-decoration: none;
+    }
+  }
+}

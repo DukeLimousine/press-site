@@ -3,12 +3,14 @@
 }
 
 .site-nav__list {
-  display: flex;
+  display: none;
   flex-direction: row;
   list-style-type: none;
   padding-inline-start: 0;
   justify-content: space-around;
-
+  @include breakpoint($medium) {
+    display: flex;
+  }
 }
 
 .site-nav__item {
@@ -27,6 +29,4 @@
   font-size: 1.25rem;
   @include link($color--white);
   text-decoration: none;
-
 }
-

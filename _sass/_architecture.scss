@@ -1,13 +1,21 @@
 .body-grid {
   display: grid;
-  grid-template-columns: auto minmax($min-width, $max-width) auto;
+  grid-template-columns: 1fr;
+  
   grid-template-rows: $header-height--large 1fr auto;
   min-height: 100vh;
   margin: 0;
+  @include breakpoint($medium) {
+    grid-template-columns: auto minmax($min-width, $max-width) auto;
+  }
 }
 
 .center-col {
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 1;
+  @include breakpoint($medium) {
+    grid-column: 2 / span 1;  
+  }
+  
 }
 
 .site-header {
