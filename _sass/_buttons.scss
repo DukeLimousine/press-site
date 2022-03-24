@@ -1,0 +1,23 @@
+.button-main {
+  appearance: none;
+  border: none;
+  color: $color--white;
+  background: $color--black;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: $font-noto;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  min-width: 11rem;
+  transition: box-shadow 0.2s ease-out, color 0.2s ease-out;
+  &:hover,
+  &:active {
+  	cursor: pointer;
+  	box-shadow: $box-shadow--main;
+	-webkit-box-shadow: $box-shadow--main;
+	-moz-box-shadow: $box-shadow--main;
+	color: $color--creepy-green;
+  }
+}

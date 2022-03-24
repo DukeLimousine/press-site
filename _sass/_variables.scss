@@ -25,8 +25,12 @@ $font-serif: $font-noto;
 
 $color--white: #ffffff;
 $color--black: #000000;
-$color--green: green;
+$color--creepy-green: rgba(65,230,134,0.8);
 
 // Header
 // _______
 $header-height--large: 160px;
+
+// General
+// ________
+$box-shadow--main: 2px 2px 8px 1px rgba(0,0,0,0.5);

@@ -1,6 +1,9 @@
 <header class="site-header center-col js-site-header">
   <div class="site-header__wrapper element-padding">
-    <h1 class="font-cursive company-name">{{ site.data.company-info.name }}</h1>
+    <h1 class="font-cursive company-name">
+    <a href="/" class="header-link">
+      {{ site.data.company-info.name }}
+    </a></h1>
     {% include site-nav.html %}
     {% include mobile_nav.html %}
   </div>

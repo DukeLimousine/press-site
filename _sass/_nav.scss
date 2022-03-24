@@ -15,18 +15,18 @@
 
 .site-nav__item {
   padding: 0.25rem 1rem;
-  transition: transform 0.3s ease-out;
-  &:hover {
-  	transform: skew(6deg,6deg);
-  }
-  &:nth-child(even):hover {
-  	transform: skew(-6deg,-6deg);
-  }
 }
 
 .site-nav__link {
   font-family: $font-serif;
   font-size: 1.25rem;
-  @include link($color--white);
+  transition: color 0.2s ease-out;
+  @include link($color--white, $color--creepy-green);
   text-decoration: none;
+}
+
+.header-link {
+  @include link($color--white, $color--creepy-green);
+  text-decoration: none;
+  transition: color 0.2s ease-out;
 }

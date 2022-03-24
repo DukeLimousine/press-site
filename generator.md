@@ -3,12 +3,13 @@ layout: home
 permalink: /generator
 ---
 
-<h1>Generator</h1>
-
-<form id="generator-form">
-  <p class="generator-result js-generator-result"></p>
-  <button>Generate</button>
-</form>
+<div class="generator-wrapper">
+  <h2>Click Ye Below to Summon a Random Hagsname</h2>
+  <form id="generator-form">
+    <p class="generator-result js-generator-result"></p>
+    <button class="button-main">Summon</button>
+  </form>
+</div>
 
 {% include generator_data.html %}
 <script src="/assets/js/generator.js" type="text/javascript"></script> 
