@@ -35,6 +35,10 @@ plugins:
 sass:
   sass_dir: _sass
 
+include: 
+  - Gemfile
+  - Gemfile.lock
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -47,8 +51,6 @@ sass:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
