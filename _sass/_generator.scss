@@ -1,5 +1,10 @@
 .generator-wrapper {
   text-align: center;
   width: 100%;
-  
+}
+
+.generator-result {
+  min-height: 40px;
+  font-family: $font-cursive;
+  font-size: 1.6rem;
 }

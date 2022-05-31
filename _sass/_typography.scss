@@ -13,5 +13,8 @@ h6 {
 
 .company-name {
   margin: 0;
-  font-size: 3.5rem;
+  @include breakpoint($medium) {
+    font-size: 3.5rem;
+  }
 }
+

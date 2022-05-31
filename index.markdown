@@ -1,4 +1,4 @@
 ---
-layout: coming_soon
+layout: home
 permalink: /
 ---

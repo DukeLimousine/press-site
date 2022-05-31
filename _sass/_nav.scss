@@ -1,5 +1,9 @@
 .site-nav {
   width: 100%;
+  display: none;
+  @include breakpoint($medium) {
+    display: block;
+  }
 }
 
 .site-nav__list {

@@ -1,21 +1,27 @@
 .site-header {
   max-width: $max-width;
-  height: $header-height--large;
+  height: $header-height--small;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
   margin: 0 auto;
+  @include breakpoint($medium) {
+    height: $header-height--large;
+  }
 }
 
 .site-header__wrapper {
   display: flex;
   background-color: $color--black;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 0 2rem;
   height: 100%;
+  @include breakpoint($medium) {
+    flex-direction: column;
+  }
 }
 
 .site-header {
