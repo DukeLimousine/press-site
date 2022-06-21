@@ -12,6 +12,6 @@ links:
   class: site-nav__generator
   id: generator
 - text: About
-  url: "/"
+  url: "/about"
   class: site-nav__about
   id: about

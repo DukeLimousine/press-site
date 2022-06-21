@@ -37,3 +37,14 @@
   	padding: 2rem;
   }
 }
+
+.max-width-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  & > * {
+    max-width: $max-width-content;
+    align-self: center;
+  }
+}
