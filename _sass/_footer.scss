@@ -25,8 +25,12 @@
   align-items: center;
 }
 
-.soc-svg__bg--facebook {
+.site-footer__icon {
   fill: $color--white;
+  transition: 0.3s;
+  &:hover {
+    fill: $color--creepy-green;
+  }
 }
 
 .site-footer__email {

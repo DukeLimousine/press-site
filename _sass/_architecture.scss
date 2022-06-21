@@ -1,10 +1,10 @@
 .body-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  
+  grid-template-columns: 1fr;  
   grid-template-rows: $header-height--small 1fr auto;
   min-height: 100vh;
   margin: 0;
+  background: $color--light-gray;
   @include breakpoint($medium) {
     grid-template-rows: $header-height--large 1fr auto;
     grid-template-columns: auto minmax($min-width, $max-width) auto;
@@ -16,7 +16,7 @@
   @include breakpoint($medium) {
     grid-column: 2 / span 1;  
   }
-  
+  background: $color--white;
 }
 
 .site-header {
