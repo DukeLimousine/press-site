@@ -1,7 +1,6 @@
 ---
 layout: home
 permalink: /generator
-main_title: '{{site.title}}'
 ---
 
 <div class="generator-wrapper">
