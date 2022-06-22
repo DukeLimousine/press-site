@@ -1,6 +1,7 @@
 ---
 layout: home
 permalink: /
+main_title: '{{site.title}}'
 ---
 
 <div class="max-width-content">

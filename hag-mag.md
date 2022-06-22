@@ -1,6 +1,7 @@
 ---
 layout: home
 project-image: haglogo.png
+main_title: '{{site.title}}'
 ---
 
 <div>
