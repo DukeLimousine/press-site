@@ -4,7 +4,7 @@ links:
   class: site-nav__home
   id: home
 - text: Projects
-  url: "/projects"
+  url: "/"
   class: site-nav__projects
   id: projects
 - text: Hag Generator

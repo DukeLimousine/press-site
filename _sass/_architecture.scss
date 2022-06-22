@@ -2,10 +2,11 @@
   display: grid;
   grid-template-columns: 1fr;  
   grid-template-rows: $header-height--small 1fr auto;
-  min-height: 100vh;
+  min-height: 114vh;
   margin: 0;
   background: $color--light-gray;
   @include breakpoint($medium) {
+    min-height: 100vh;
     grid-template-rows: $header-height--large 1fr auto;
     grid-template-columns: auto minmax($min-width, $max-width) auto;
   }
