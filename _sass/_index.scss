@@ -1,7 +1,7 @@
 .ks-logo {
   max-width: 320px;
   @include breakpoint($medium) {
-    max-width: 400px;
+    max-width: none;
   }
 }
 
