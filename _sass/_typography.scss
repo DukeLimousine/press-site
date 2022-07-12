@@ -26,3 +26,10 @@ p {
   }
 }
 
+.black-link {
+  @include link($color--black, $color--creepy-green);
+  text-decoration: underline;
+  transition: color 0.2s ease-out;
+  font-family: $font-serif;
+}
+
