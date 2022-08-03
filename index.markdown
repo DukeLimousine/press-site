@@ -9,7 +9,20 @@ permalink: /
     <img alt="Hag Mag Logo" class="hagmag-logo-svg" src="/assets/img/hagmag-logo-black.svg"/>
   </div>
 
-  <p>Hag Mag: a TERRIBLE 5E compatible adventure setting, live now on Kickstarter. Click below!</p>
+  <div class="padding-wrapper">
+    <p>Hag Mag has been fully funded on Kickstarter!</p>
+    <p>The campaign has ended, but we are currently accepting preorders for the print version.</p>
+  </div>
+
+  <div class="padding-wrapper">
+    <a href="https://www.phillytarotdeck.com/hag-mag-preorder/hag-mag-pre-order" title="Hag Mag Preorder Link" target="_blank">
+      <button class="button-main">Preorder Now!</button>
+    </a>
+  </div>
+
+  <div class="padding-wrapper">
+    <p>To visit the Kickstarter Campaign page, click below.</p>
+  </div>
 
   <div class="padding-wrapper">
     <a href="https://www.kickstarter.com/projects/hagmag/hag-mag-a-terrible-rpg-adventure-setting-for-5e" title="Kickstarter Link" target="_blank">
